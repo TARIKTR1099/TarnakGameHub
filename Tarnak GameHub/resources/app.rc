@@ -1,0 +1,43 @@
+// Tarnak Game Hub Resource File
+
+#include <windows.h>
+
+// Application icon
+IDI_APP_ICON ICON "app.ico"
+
+// Version information
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION    1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+FILEFLAGS      VS_FF_DEBUG
+#else
+FILEFLAGS      0x0L
+#endif
+FILEOS         VOS_NT_WINDOWS32
+FILETYPE       VFT_APP
+FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "Tarnak Development"
+            VALUE "FileDescription",  "Tarnak Game Hub - Advanced Game Management Platform"
+            VALUE "FileVersion",      "1.0.0.0"
+            VALUE "InternalName",     "TarnakGameHub"
+            VALUE "LegalCopyright",   "Copyright (c) 2026 Tarnak Development"
+            VALUE "OriginalFilename", "TarnakGameHub.exe"
+            VALUE "ProductName",      "Tarnak Game Hub"
+            VALUE "ProductVersion",   "1.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+// Manifest for modern Windows controls and DPI awareness
+1 RT_MANIFEST "app.manifest"
