@@ -2,8 +2,8 @@
 
 #include <windows.h>
 
-// Application icon
-IDI_APP_ICON ICON "app.ico"
+// Application icon (temporarily disabled - add your own app.ico file)
+// IDI_APP_ICON ICON "app.ico"
 
 // Version information
 VS_VERSION_INFO VERSIONINFO

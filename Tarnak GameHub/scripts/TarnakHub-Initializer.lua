@@ -1,10 +1,10 @@
 --[[
     TarnakHub-Initializer.lua
     Main initialization script for Tarnak Game Hub
-    Version: 2.0.0
+    Version: 1.0.0
 --]]
 
-local VERSION = "2.0.0"
+local VERSION = "1.0.0"
 local TARNAK_HUB = {}
 
 -- Initialize Tarnak Game Hub
@@ -25,6 +25,8 @@ function TARNAK_HUB.Initialize()
     end)
     
     -- Initialize subsystems
+    TARNAK_HUB.InitSettings()
+    TARNAK_HUB.InitAutoUpdater()
     TARNAK_HUB.InitKeyBindings()
     TARNAK_HUB.InitGlobalChat()
     TARNAK_HUB.InitSystemOptimizer()
@@ -200,6 +202,24 @@ end
 -- Translation
 function TARNAK_HUB.InitTranslation()
     print("[TarnakHub] Initializing translation system...")
+end
+
+-- Settings Manager
+function TARNAK_HUB.InitSettings()
+    print("[TarnakHub] Initializing settings manager...")
+    if SettingsManager then
+        -- Settings already initialized by the script
+        print("[TarnakHub] Settings manager ready")
+    end
+end
+
+-- Auto Updater
+function TARNAK_HUB.InitAutoUpdater()
+    print("[TarnakHub] Initializing auto updater...")
+    if AutoUpdater then
+        -- AutoUpdater already initialized by the script
+        print("[TarnakHub] Auto updater ready")
+    end
 end
 
 -- Initialize on load

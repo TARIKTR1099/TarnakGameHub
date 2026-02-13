@@ -73,18 +73,18 @@
 #include <cwchar>
 #include <cwctype>
 
-// Third-party libraries
-#include <nlohmann/json.hpp>
+// Third-party libraries (install via vcpkg or nuget)
+// #include <nlohmann/json.hpp>
 
-// DirectX
+// DirectX (Windows SDK)
 #include <d3d11.h>
 #include <dxgi.h>
 #include <d3dcompiler.h>
 
-// ImGui
-#include "imgui.h"
-#include "imgui_impl_win32.h"
-#include "imgui_impl_dx11.h"
+// ImGui (add to project or install via vcpkg)
+// #include "imgui.h"
+// #include "imgui_impl_win32.h"
+// #include "imgui_impl_dx11.h"
 
 // Application version
 #define APP_NAME "Tarnak Game Hub"
@@ -96,7 +96,7 @@
 #define APP_COPYRIGHT "Copyright (c) 2026 Tarnak Development"
 
 // Namespace alias
-namespace json = nlohmann;
+// namespace json = nlohmann;
 namespace fs = std::filesystem;
 
 // Utility macros

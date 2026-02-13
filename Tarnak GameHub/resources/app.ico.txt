@@ -1,0 +1,5 @@
+// This is a placeholder icon file
+// You need to create a real .ico file or use a tool like Resource Hacker to add an icon
+// For now, we'll create a minimal valid icon resource
+
+// Alternative: Remove the icon reference from app.rc if you don't have an icon yet
